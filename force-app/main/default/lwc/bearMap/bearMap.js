@@ -15,7 +15,7 @@ export default class BearMap extends LightningElement {
 	handleBearListUpdate(bears) {
 		this.mapMarkers = bears.map(bear => {
 			const Latitude = bear.Location__Latitude__s;
-			const Longitude = bear.Location__Longitude__s;
+            const Longitude = bear.Location__Longitude__s;
 			return {
 				location: { Latitude, Longitude },
 				title: bear.Name,
